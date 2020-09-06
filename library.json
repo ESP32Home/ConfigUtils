@@ -1,0 +1,19 @@
+{
+    "name": "ConfigUtils",
+    "version" : "1.0.0",
+    "description" : "A tiny helper library to wrap dependencies and provide a one liner to load json config files",
+    "keywords" : "json, Arduinojson, spiffs, config",
+    "license" : "MIT",
+    "repository":{
+        "type" : "git",
+        "url" : "https://github.com/ESP32Home/ConfigUtils.git"
+    },
+    "authors":{
+        "name" : "wassfila",
+        "url": "https://github.com/wassfila"
+    },
+    "dependencies":{
+    },
+    "frameworks" : "arduino",
+    "platforms" : "espressif32"
+}
