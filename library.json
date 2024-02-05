@@ -1,6 +1,6 @@
 {
     "name": "ConfigUtils",
-    "version" : "1.0.0",
+    "version" : "1.1.0",
     "description" : "A tiny helper library to wrap dependencies and provide a one liner to load json config files",
     "keywords" : "json, Arduinojson, spiffs, config",
     "license" : "MIT",
@@ -13,6 +13,7 @@
         "url": "https://github.com/wassfila"
     },
     "dependencies":{
+        "bblanchon/ArduinoJson":"@^7.0.3"
     },
     "frameworks" : "arduino",
     "platforms" : "espressif32"

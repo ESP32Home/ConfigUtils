@@ -14,7 +14,7 @@ bool spiffs_init(){
     return true;
 }
 
-bool load_json(DynamicJsonDocument &config,const char* FileName,bool verbose){
+bool load_json(JsonDocument &config,const char* FileName,bool verbose){
     if(!ready){
         if(!spiffs_init()){
             return false;
@@ -39,7 +39,7 @@ bool load_json(DynamicJsonDocument &config,const char* FileName,bool verbose){
     }
 }
 
-bool save_json(DynamicJsonDocument &config,const char* FileName){
+bool save_json(JsonDocument &config,const char* FileName){
     if(!ready){
         if(!spiffs_init()){
             return false;
@@ -50,7 +50,7 @@ bool save_json(DynamicJsonDocument &config,const char* FileName){
     return true;
 }
 
-bool load_config(DynamicJsonDocument &config,bool verbose){
+bool load_config(JsonDocument &config,bool verbose){
     bool result = load_json(config,"/config.json");
     if(verbose){
         if(result){
@@ -65,7 +65,7 @@ bool load_config(DynamicJsonDocument &config,bool verbose){
     return result;
 }
 
-bool save_config(DynamicJsonDocument &config){
+bool save_config(JsonDocument &config){
     return save_json(config,"/config.json");
 }
 
